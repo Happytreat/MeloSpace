@@ -17,9 +17,12 @@ class BlogAbout extends React.Component {
       projects.push(
         <Grid item md={6} xs={12}>
           <Card title={p.title}
+                subtitle={p.subtitle}
                 description={p.description}
                 github={p.github}
-                more={p.more} />
+                website={p.website}
+                more={p.more}
+                color={p.color} />
         </Grid>
       )
     });
