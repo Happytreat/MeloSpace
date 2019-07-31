@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `My Website`,
+    title: `MeloSpace`,
     author: `Melodies Sim`,
     description: `First personal website created using Gatsby.`,
     siteUrl: `https://melodiessim.netlify.com/`,
@@ -58,7 +58,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Melodies's Website`,
-        short_name: `MyWebsite`,
+        short_name: `MeloSpace`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,

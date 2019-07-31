@@ -13,7 +13,7 @@ is so awesome!
 Did you know that Gatsby uses GraphQL to query for data such as 
 from your file system?
 
-Learn more about Gatsby is [here](https://gatsbyjs.org/).
+Learn more about Gatsby [here](https://gatsbyjs.org/).
 
 I will be posting more about various topics such as blockchain
 technology, web development and cryptography soon!
