@@ -51,9 +51,9 @@ class BlogAbout extends React.Component {
         <ul>
           <li> Runner Up National Blockchain Challenge 2019</li>
           <li> AWS Challenge Winner at Angel Hack 2019</li>
-          <li> Awardee of the NUS Global Merit Scholarship</li>
-          <li> Awardee of the Lee Kuan Yew Mathematics and Science Award</li>
-          <li> Gold Award of Singapore Mathematical Olympiad</li>
+          <li> Awardee of the NUS Global Merit Scholarship 2017-2020</li>
+          <li> Awardee of the Lee Kuan Yew Mathematics and Science Award 2015</li>
+          <li> Gold Award of Singapore Mathematical Olympiad 2014</li>
         </ul>
 
         <h4>My Publications</h4>
