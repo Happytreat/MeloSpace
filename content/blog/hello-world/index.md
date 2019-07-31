@@ -1,21 +1,18 @@
 ---
 title: Hello World
-date: "2015-05-01T22:12:03.284Z"
+date: "2019-07-30T22:12:03.284Z"
 ---
 
-This is my first post on my new fake blog! How exciting!
+This is my first post on my new personal website! As some of you 
+might already know, I have created this website using Gatsby which 
+is so awesome! 
 
-I'm sure I'll write a lot more interesting things in the future.
+Did you know that Gatsby uses GraphQL to query for data such as 
+from your file system?
 
-Oh, and here's a great quote from this Wikipedia on
-[salted duck eggs](http://en.wikipedia.org/wiki/Salted_duck_egg).
+Learn more about Gatsby is [here](https://gatsbyjs.org/).
 
-> A salted duck egg is a Chinese preserved food product made by soaking duck
-> eggs in brine, or packing each egg in damp, salted charcoal. In Asian
-> supermarkets, these eggs are sometimes sold covered in a thick layer of salted
-> charcoal paste. The eggs may also be sold with the salted paste removed,
-> wrapped in plastic, and vacuum packed. From the salt curing process, the
-> salted duck eggs have a briny aroma, a gelatin-like egg white and a
-> firm-textured, round yolk that is bright orange-red in color.
+I will be posting more about various topics such as blockchain
+technology, web development and cryptography soon!
 
-![Chinese Salty Egg](./salty_egg.jpg)
+![Gatsby](./gatsby.png)
