@@ -57,7 +57,7 @@ const Bio = () => {
         Written by <strong>{author}</strong> who lives and studies in Singapore
         turning novel ideas into reality.
         {` `}
-        <a href={`https://github.com/${social.twitter}`}>
+        <a href={`https://github.com/${social.twitter}`} target="_blank" rel="noopener noreferrer">
           Check out her projects on Github.
         </a>
       </p>
