@@ -1,8 +1,7 @@
 ---
 title: How to use Promise.all for multiple async functions
 date: "2019-08-01T22:12:03.284Z"
-description: "Some of the ways I get to keep myself updated with the technology in the field is
-              through atending tech meetups and listening to podcasts. ..."
+description: " Consider this case: I have an array where I want to perform an async function on each element of the array. ..."
 ---
 #### *Disclaimer:*
  This article assumes basic knowledge of asynchronous events in Javascript and what 
@@ -27,8 +26,7 @@ async function asyncFunc () {
 #### Performing multiple async functions in a loop
 Now what if we want to perform multiple async functions say in a forEach loop? 
 
-Consider this case: I have an array ```data``` where I want to perform an async function ```asyncFunc()``` on each of
-the element of the array. 
+Consider this case: I have an array ```data``` where I want to perform an async function ```asyncFunc()``` on each element of the array. 
 
 ##### Try 1: 
 ```javascript
