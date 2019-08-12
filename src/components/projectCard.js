@@ -69,7 +69,7 @@ class ProjectCard extends React.Component {
     }
 
     return (
-      <Card style={classes[color]} border={1} borderColor="text.primary">
+      <Card style={classes[color]} border={1} bordercolor="text.primary">
         <CardContent>
           <Typography variant="h5" gutterBottom>
             {title}
