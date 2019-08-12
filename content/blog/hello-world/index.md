@@ -15,7 +15,10 @@ from your file system?
 
 Learn more about Gatsby [here](https://gatsbyjs.org/).
 
-I will be posting more about various topics such as blockchain
-technology, web development and cryptography soon!
+I aim to post more about topics I feel passionate about - such as blockchain technology, web development 
+and cryptography, or something I have learnt while building apps. I will try to upload a new article once 
+every week/fortnight. :)
 
 ![Gatsby](./gatsby.png)
+
+***edited on 11/08/19***
