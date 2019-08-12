@@ -28,7 +28,7 @@ const Projects = [
     subtitle: 'Contributed to the UI and back-end API of Hodlnaut app site. Independently integrated the Know Your Customer (KYC) system ' +
       'into the app.',
     description: 'Built with React-Redux, NodeJS and ExpressJS',
-    website: 'https://app.hodlnaut.com',
+    website: 'https://app.hodlnaut.com/demo',
     color: 'pink',
   },
   {
@@ -40,9 +40,10 @@ const Projects = [
   },
   {
     title: 'Serverless UPlan',
-    subtitle: 'A visual university planning module which includes features such as module tagging and adding goals to each semester',
-    description: 'In production: building using Serverless framework, NodeJS and React-redux',
+    subtitle: 'A visual univeristy planning web app includes features such as module tagging and adding goals to each semester',
+    description: 'In progress: Built using Serverless framework, NodeJS and React-Redux.',
     color: 'yellow',
+    github: 'https://github.com/Happytreat/UPlan2.0',
   },
   {
     title: 'MeloSpace',

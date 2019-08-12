@@ -1,9 +1,9 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+// import { rhythm } from "../utils/typography"
 import JSImg from '../../content/assets/js.png';
 import NodeImg from '../../content/assets/nodejs.png';
 import ExpressImg from '../../content/assets/expressjs.png';
