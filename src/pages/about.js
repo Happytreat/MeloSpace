@@ -39,8 +39,7 @@ class BlogAbout extends React.Component {
         <img alt="Languages" src={ReactImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <img alt="Languages" src={AWSImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <p>
-          Web Development: NodeJS, ExpressJS, SQL, ReQL,
-          Apollo-GraphQL, React-Redux, Gatsby, Serverless using AWS Lambda, Cognito, IAM, DynamoDB
+          Web Development: NodeJS, ExpressJS, SQL, ReQL, React-Redux, Gatsby, Serverless using AWS Lambda, Cognito, IAM, DynamoDB
         </p>
         <p>
           Blockchain Tech: Truffle, Drizzle, Ganache, Solidity
@@ -60,6 +59,11 @@ class BlogAbout extends React.Component {
         <li><a href="http://ircset.org/anand/2015papers/IRC-SET-2015_submission_46.pdf">Generalisation of bishop polynomial derived from
           conventional rook polynomial</a></li>
         <li><a href="https://www.researchgate.net/scientific-contributions/2050116807_Sim_Ming_Hui_Melodies">Solution Structures and Model Membrane Interactions of Ctriporin, an Anti-Methicillin-Resistant Staphylococcus aureus Peptide from Scorpion Venom</a></li>
+
+
+        <h4>My Resume</h4>
+
+        <iframe src="https://drive.google.com/file/d/1RD6Dymed1XwiaUAr9GFd9IvFtYzgfyr5/preview" width="1000" height="1400"></iframe>
       </Layout>
     )
   }
