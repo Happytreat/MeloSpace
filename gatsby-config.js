@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `MeloSpace`,
     author: `Melodies Sim`,
-    description: `First personal website created using Gatsby.`,
+    description: `Personal website created using Gatsby.`,
     siteUrl: `https://melodiessim.netlify.com/`,
     social: {
       twitter: `Happytreat`,

@@ -1,5 +1,13 @@
 const Projects = [
   {
+    title: 'UPlan',
+    subtitle: 'A visual univeristy planning web app includes features such as module tagging and adding goals to each semester',
+    description: 'In progress: Built using Serverless Framework, NodeJS and React-Redux.',
+    color: 'yellow',
+    github: 'https://github.com/Happytreat/UPlan2.0',
+    website: 'https://uplan.netlify.com/',
+  },
+  {
     title: 'Patronage Collectibles',
     subtitle: 'A decentralised crowdfunding platform with crypto-collectibles and\n' +
       '            Harberger taxes',
@@ -37,13 +45,6 @@ const Projects = [
     description: 'Designed with HTML, CSS',
     website: 'https://www.hodlnaut.com',
     color: 'green',
-  },
-  {
-    title: 'Serverless UPlan',
-    subtitle: 'A visual univeristy planning web app includes features such as module tagging and adding goals to each semester',
-    description: 'In progress: Built using Serverless framework, NodeJS and React-Redux.',
-    color: 'yellow',
-    github: 'https://github.com/Happytreat/UPlan2.0',
   },
   {
     title: 'MeloSpace',

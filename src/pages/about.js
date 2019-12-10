@@ -23,9 +23,8 @@ class BlogAbout extends React.Component {
           About Me
         </h2>
         <p style={{alignContent: 'center'}}>
-          A highly independent and motivated learner, assionate about turning novel ideas into reality. 
-          <br />
-          Third year Math and CS undergrad at National University of Singapore.
+          Highly independent and motivated. Passionate about turning novel ideas into reality. 
+          A Third year Math and CS undergrad at National University of Singapore.
         </p>
         <h4>Languages/Tech Stack</h4>
         <p>
