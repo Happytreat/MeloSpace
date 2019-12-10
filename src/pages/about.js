@@ -23,14 +23,13 @@ class BlogAbout extends React.Component {
           About Me
         </h2>
         <p style={{alignContent: 'center'}}>
-          Full-stack Developer || Blockchain Enthusiast ||
-          Fortnite Lover ||
+          A highly independent and motivated learner, assionate about turning novel ideas into reality. 
           <br />
           Third year Math and CS undergrad at National University of Singapore.
         </p>
         <h4>Languages/Tech Stack</h4>
         <p>
-        Javascript, Python, Java, C/C++
+        Javascript, Python, Java, C++
         </p>
         <img alt="Javascript" src={JSImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <img alt="NodeJS" src={NodeImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
@@ -39,7 +38,7 @@ class BlogAbout extends React.Component {
         <img alt="Languages" src={ReactImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <img alt="Languages" src={AWSImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <p>
-          Web Development: NodeJS, ExpressJS, SQL, ReQL, React-Redux, Gatsby, Serverless using AWS Lambda, Cognito, IAM, DynamoDB
+          Web Development: NodeJS, ExpressJS, SQL, ReQL, ReactJS, Gatsby, Serverless Framework using AWS Lambda, Cognito, IAM, DynamoDB
         </p>
         <p>
           Blockchain Tech: Truffle, Drizzle, Ganache, Solidity
@@ -63,7 +62,7 @@ class BlogAbout extends React.Component {
 
         <h4>My Resume</h4>
 
-        <iframe src="https://drive.google.com/file/d/1RD6Dymed1XwiaUAr9GFd9IvFtYzgfyr5/preview" width="1000" height="1400"></iframe>
+        <iframe src="https://drive.google.com/file/d/1jrthi3T__hE4rDh0Z7b3QVfAJCYF94yY/preview" width="1000" height="1400"></iframe>
       </Layout>
     )
   }
