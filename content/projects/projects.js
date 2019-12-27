@@ -3,7 +3,7 @@ const Projects = [
     title: 'UPlan',
     subtitle: 'A visual univeristy planning web app includes features such as module tagging and adding goals to each semester',
     description: 'In progress: Built using Serverless Framework, NodeJS and React-Redux.',
-    color: 'yellow',
+    color: 'pink',
     github: 'https://github.com/Happytreat/UPlan2.0',
     website: 'https://uplan.netlify.com/',
   },
@@ -51,7 +51,7 @@ const Projects = [
     subtitle: 'This website! First personal website built with a static site generator. See if you can find my very first webpage on Github :p',
     description: 'Built using Gatsby and React and hosted on Netlify',
     github: 'https://github.com/Happytreat/myWebsite',
-    color: 'pink',
+    color: 'yellow',
   },
   {
     title: 'Face Recognition from Image',

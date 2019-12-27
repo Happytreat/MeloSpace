@@ -61,7 +61,7 @@ class BlogAbout extends React.Component {
 
         <h4>My Resume</h4>
 
-        <iframe src="https://drive.google.com/file/d/1jrthi3T__hE4rDh0Z7b3QVfAJCYF94yY/preview" width="1000" height="1400"></iframe>
+        <iframe title="Resume" src="https://drive.google.com/file/d/1jrthi3T__hE4rDh0Z7b3QVfAJCYF94yY/preview" width="1000" height="1400"></iframe>
       </Layout>
     )
   }
