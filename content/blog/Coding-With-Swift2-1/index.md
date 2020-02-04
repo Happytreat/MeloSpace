@@ -135,7 +135,7 @@ class BouncePeg: Peg {
 }
 ```
 
-As evident above, the overriden method in `BouncePeg` has to include a force downcast to ensure that `other.numOfBounces` exists. Having to use a force downcast is generally a form of Code Smell. Of course, we could have guarded hat `other` is an instance of `BouncePeg` before downcasting. Still is there a cleaner way we could have avoided this?
+As evident above, the overriden method in `BouncePeg` has to include a force downcast to ensure that `other.numOfBounces` exists. Having to use a force downcast is generally a form of Code Smell. Of course, we could have guarded that `other` is an instance of `BouncePeg` before downcasting. Still is there a cleaner way we could have avoided this?
 
 Here, comes the Aha moment: **"Start with a Protocol before writing a class"**. 
 
@@ -160,7 +160,7 @@ struct BouncePeg {
 
 *Sweet!* Look how easy protocol solves the problem of Lost Type Relationships (or do they really ???) 
 
-Oh wait, there's a catch to this: with the use of `Self`, `Peg` can no longer be used as a type, but only as a generic constraint. Consider if we have a board, and we want a functionto add pegs to the board:
+Oh wait, there's a catch to this: with the use of `Self`, `Peg` can no longer be used as a type, but only as a generic constraint. Consider if we have a board, and we want a function to add pegs to the board:
 
 ```swift
 
