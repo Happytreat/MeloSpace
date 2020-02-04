@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 import JSImg from '../../content/assets/js.png';
 import NodeImg from '../../content/assets/nodejs.png';
 import ExpressImg from '../../content/assets/expressjs.png';
-import GraphQLImg from '../../content/assets/graphql.png';
+import SwiftImg from '../../content/assets/swift.png';
 import ReactImg from '../../content/assets/react.png';
 import AWSImg from '../../content/assets/lambda.png';
 
@@ -28,16 +28,17 @@ class BlogAbout extends React.Component {
         </p>
         <h4>Languages/Tech Stack</h4>
         <p>
-        Javascript, Python, Java, C++
+        Swift, Javascript, Python, Java, C++
         </p>
-        <img alt="Javascript" src={JSImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <img alt="NodeJS" src={NodeImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
-        <img alt="ExpressJS" src={ExpressImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
-        <img alt="Languages" src={GraphQLImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
+        <img alt="Languages" src={SwiftImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <img alt="Languages" src={ReactImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <img alt="Languages" src={AWSImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <p>
           Web Development: NodeJS, ExpressJS, SQL, ReQL, ReactJS, Gatsby, Serverless Framework using AWS Lambda, Cognito, IAM, DynamoDB
+        </p>
+        <p>
+          Mobile Development: Swift (iOS)
         </p>
         <p>
           Blockchain Tech: Truffle, Drizzle, Ganache, Solidity
