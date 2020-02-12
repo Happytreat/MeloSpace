@@ -6,7 +6,7 @@ description: " React Native allows one to utilise native components by running c
 
 #### CS3216
 
-This semester, I am enrolled in [CS3216](https://www.cs3216.com) - Software Product Engineering for Digital Markets. Each week, we have different presenters come talk to us about different topics that might help us in developing innovative products that will gain traction in the market. Last week, we had a representatives from 2 companies talk about Cross Platform Mobile Application Development. One of them have been using React Native for their products and the other used Flutter. I'd like to share my reflection about the discussion, for the future self and also for anyone that might want to hear more about what I've to say.
+This semester, I am enrolled in [CS3216](https://www.cs3216.com) - Software Product Engineering for Digital Markets. Each week, we have different presenters come talk to us about different topics that might help us in developing innovative products that will gain traction in the market. Last week, we had representatives from 2 companies talk about Cross Platform Mobile Application Development. One of them have been using React Native for their products and the other used Flutter. I'd like to share my reflection about the discussion, for the future self and also for anyone that might want to hear more about what I've to say.
 
 #### React Native and Flutter
 
@@ -19,5 +19,3 @@ This leads me to the next point I've learnt: use the Right Tool for the Right Jo
 #### Be Prepared for Breaking Changes
 
 Lastly, a point that was mentioned on both presentation struck me: how open-source tools like RN or iOS make breaking changes all the time. That influences how we should try to avoid using third party libraries as best as possible in production and also have end-to-end testing like Cypress to make sure that with an upgrade, features work the same way they do. This can be a complicated process because we might have to test on different environment/platforms or browsers. In production, we have to also be updated on the latest issues/changes of a tool we are using and be ready to dig into the source code and fix changes ourselves.
-
-
