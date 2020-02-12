@@ -8,15 +8,15 @@ After 2 weeks, I present the developer guide for MSpriteKit and how it relates t
 
 ---
 
-## Architecture
+## #1 Architecture
 
 ### General
 
 The 3 main components of the Peggle2.0Game are:
 
-- MSpriteKit: Foundation, supplying the Physics Engine, Scene builders and View Renderer
-- PEGEngine: A Peggle2.0 specific engine which specifies the appearance and behaviors of game objects
-- GameViewContoller: The root view controller of the app, which setups a pre-loaded `Board` into the View, and start the Game Loop running.
+- _MSpriteKit_: Foundation, supplying the Physics Engine, Scene builders and View Renderer
+- _PEGEngine_: A Peggle2.0 specific engine which specifies the appearance and behaviors of game objects
+- _GameViewContoller_: The root view controller of the app, which setups a pre-loaded `Board` into the View, and start the Game Loop running.
 
 ![Figure 1: Relationship between MSpriteKit, PEGEngine and GameController](PS3_Fig1.png)
 _Figure 1: Relationship between MSpriteKit, PEGEngine and GameController_
@@ -27,7 +27,7 @@ MSpriteKit strives to be a general-purpose framework for drawing edges, and volu
 
 MSpriteKit, like the original SpriteKit by Apple, is split into 3 distinct components:
 
-- Base: `MKNode`
+- Base: `MKNode` is the base class of all MSpriteKit nodes.
 
 - Scene Building and View Renderer: Display visual content using MSpriteKit.
 
@@ -43,17 +43,103 @@ MSpriteKit, like the original SpriteKit by Apple, is split into 3 distinct compo
   - protocol `MKPhysicsContactDelegate`: Methods your app can implement to respond when physics bodies come into contact.
 
 ![General Architecture of MSpriteKit](MSpriteKitGeneral.png)
-_Figure 2: General Architecture of MSpriteKit (more on specific classes in Figure 3)_
+_Figure 2: General Architecture of MSpriteKit (more on specific classes in Section 2&3)_
 
 ### PEGEngine
 
-A game engine built on top of MSpriteKit specifically made for a remade Peggle 2.0 (see [1]).The game engine encapsulates the game objects and their behaviors when interacting with other game objects.
+A game engine built on top of MSpriteKit specifically made for a remade Peggle 2.0. The game engine encapsulates the game objects and their behaviors when interacting with other game objects.
 
-Figure 3: General Architecture of PEGEngine
+![Figure 3: General Architecture of PEGEngine](PEGEngineGeneral.png)
+_Figure 3: General Architecture of PEGEngine_
 
-## Physics
+![Figure 4: Game Objects Classes using in PEGEngine](GameObjects.png)
+_Figure 4: Game Objects Classes using in PEGEngine_
+
+## #2 Scene Building and View Rendering (MSpriteKit)
+
+### 2a Rendering the View from Scene
+
+#### Game Loop
+
+The game loop is implemented using `CADisplayLink` class from UIKit. Every frame, the `step` function is called:
+`
+
+```swift
+/// Functions to be performed with each frame
+@objc func step(displayLink: CADisplayLink) {
+  // Calulate change in time `dt` between previous frame and current frame
+  let dt = ...
+
+  scene.update(dt: dt)
+
+  // Refresh the view
+  refresh()
+}
+```
+
+#### MKView `refresh()`
+
+- var `animatingNodes`: nodes that will be undergoing animation
+- var `fixedNodes`: nodes that will never change their position or view
+
+```swift
+/// Refresh the view every frame
+func refresh() {
+  // Perform animation and additionlly a callback function upon completion
+  animateNodes(nodes: animatingNodes)
+
+  removeNonAnimatingNonFixedViews()
+
+  addNonAnimatingNonFixedSpriteNodes(nodes: self.scene!.children)
+}
+```
+
+### 2b Updating the Scene
+
+The scene update lifecycle methods can be overriden by subclasses.
+
+```swift
+/// Tells your app to perform any app-specific logic to update your scene.
+func update(dt: TimeInterval) {
+  didEvaluateActions()
+
+  physicsWorld.simulatePhysics(dt: dt)
+
+  didSimulatePhysics()
+
+  didFinishUpdate()
+}
+```
+
+## #3 Physics (MSpriteKit)
+
+### 3a simulatePhysics()`
+
+```swift
+/// Simulate physics and updates position and velocity of nodes
+func simulatePhysics(dt: TimeInterval) {
+
+  let newPositions = generateNewPositions(dt: dt)
+
+  // Collision: where that happens, resolve collision by adjusting
+  // the position to the point of collision
+  resolveCollisions(newPositions: newPositions)
+
+  updateScene(newPositions: newPositions)
+
+  updateVelocityOfNodes(dt: dt)
+}
+```
 
 Figure 4: Resolving collisions
+
+## #4 Design Considerations
+
+### 4a Updating views
+
+### 4b Subclassing Game Objects
+
+### 4c Handling View Animations
 
 ## References
 
