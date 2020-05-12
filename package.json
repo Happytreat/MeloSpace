@@ -1,8 +1,8 @@
 {
   "name": "MeloSpace",
-  "private": true,
-  "description": "Personal blog and resume",
-  "version": "0.1.0",
+  "private": false,
+  "description": "Personal tech blog",
+  "version": "1.0.0",
   "author": "Melodies Sim",
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
@@ -50,7 +50,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gatsbyjs/gatsby-starter-blog.git"
+    "url": "git+https://github.com/Happytreat/MeloSpace"
   },
   "scripts": {
     "build": "gatsby build",
