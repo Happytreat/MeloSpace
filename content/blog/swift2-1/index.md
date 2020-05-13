@@ -4,6 +4,10 @@ date: "2020-02-04T22:12:03.284Z"
 description: "After watching WWDC talk on Protocol-oriented programming in Swift [2], I'm convinced there must be a better way than subclassing the pegs for three reasons. Here I'll summarise the 3 points I've gathered about classes..."
 ---
 
+Please refer to the latest [Medium article](https://medium.com/@melodiessim98/protocol-oriented-programming-in-swift-7b1f762cafd5?sk=2b829411843cafd3375ce94c28a8a4c6) I've posted to learn more about Protocol Oriented Programming! 
+
+---
+
 Today, I've decided to take the first step in what some call _learning through reflection_.
 
 The Swift app I've been making is a re-creation of the popular Peggle Game. Part 2 of this series will be addressing some thoughts (and also hindsight) I have while designing the Level Designer of Peggle. Hopefully, this documentation of my journey will help some of you readers, or at least my future self.
