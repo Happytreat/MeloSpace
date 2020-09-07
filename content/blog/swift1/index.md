@@ -4,7 +4,7 @@ date: "2020-02-04T22:12:03.284Z"
 description: "After watching WWDC talk on Protocol-oriented programming in Swift [2], I'm convinced there must be a better way than subclassing the pegs for three reasons. Here I'll summarise the 3 points I've gathered about classes..."
 ---
 
-Please refer to the latest [Medium article](https://medium.com/@melodiessim98/protocol-oriented-programming-in-swift-7b1f762cafd5?sk=2b829411843cafd3375ce94c28a8a4c6) I've posted to learn more about Protocol Oriented Programming! 
+Please refer to the latest [Medium article](https://medium.com/@melodiessim98/protocol-oriented-programming-in-swift-7b1f762cafd5?sk=2b829411843cafd3375ce94c28a8a4c6) I've posted to learn more about Protocol Oriented Programming!
 
 ---
 
@@ -201,18 +201,6 @@ This is a pretty bad restriction for `Peg` because we would expect to add differ
 Protocol-oriented programming is really interesting, offering many features such as using `Self` to increase customisability of classes. However, I feel that the usual OOP (Polymorphism) may also be useful depending on the engineering problem you are facing. For the Design of Peg Model, I have decided for now that **Choice 2** suits the problem statement more.
 
 ---
-
----
-
-Hope you've enjoyed this article. Do keep an eye out for Coding With Swift Series 2.2/5 soon. It will be about another design dilemma for the Level Designer. :)
-
-~ Melodies
-
----
-
-### After words
-
-Some of you curious ones might wonder why start from Part 2? At this point in writing I've just finalised my Level Designer (first draft version) and am planning to make some design refinement (as I'll be describing) after listening to a talk on Protocol-oriented programming. Writing about this in Part 2 will be fresh especially at this time when I'm comtemplating between designs. The overall plan is to complete the app (as well as the remaining Parts 3-5 of this series) before returning to Part 1: Lessons about swift I've learnt, collating the various aspects of Swift programming I've gathered.
 
 ### References
 
