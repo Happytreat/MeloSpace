@@ -1,7 +1,7 @@
 ---
-title: "NOTE: Testing Python3 Context Managers"
+title: "Testing Python3 Context Managers"
 date: "2020-09-14T22:12:03.284Z"
-description: "Python3 Context managers are beneficial tools for resource handling that involves locks and files. However, it might not be straightforward to test/mock. This post serve as a personal note on testing context managers and their async counterparts using `unittest` module."
+description: "Python3 Context managers are beneficial tools for resource handling that involves locks and files. However, it might not be straightforward to test/mock..."
 ---
 
 Python3 Context managers are beneficial tools for resource handling that involves locks and files. A common context manager is the in-built `open` function. Despite their benefits, context managers might not be straightforward to test/mock.
