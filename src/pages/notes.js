@@ -1,10 +1,10 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
 
-import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
+require(`katex/dist/katex.min.css`)
 
 class BlogIndex extends React.Component {
   render() {
@@ -27,11 +27,11 @@ class BlogIndex extends React.Component {
         <h3>Structure of paper summary</h3>
         <p>
         For paper summaries, I try to prioritize understanding the intuitions behind the technology over 
-        memorizing the nitty-gritty details. In particular, I will focus on the following questions: 
+        memorizing the nitty-gritty details. In particular, here are some questions I will focus on answering: 
         <br></br>
         <ol>
-          <li>What is the big picture (architecture)?</li> 
           <li>What is the problem the authors wish to solve? </li>
+          <li>What is the big picture (architecture)?</li> 
           <li>How is the solution implemented in practice? (How does it differ from the theory?)</li>
           <li>What are the main advantages of the solution?</li>
           <li>What are some shortcomings of the solution?</li>
