@@ -3,9 +3,10 @@ module.exports = {
     title: `MeloSpace`,
     author: `Melodies Sim`,
     description: `Personal website created using Gatsby.`,
-    siteUrl: `https://melodiessim.netlify.com/`,
+    siteUrl: `https://melodiessim.netlify.app/`,
     social: {
-      twitter: `Happytreat`,
+      twitter: `melodiessim`,
+      github: `Happytreat`,
     },
   },
   plugins: [
@@ -20,6 +21,13 @@ module.exports = {
       options: {
         // replace "UA-XXXXXXXXX-X" with your own Tracking ID
         trackingId: "UA-147993528-1",
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/notes`,
+        name: `notes`,
       },
     },
     {

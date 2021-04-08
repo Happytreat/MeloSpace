@@ -14,8 +14,19 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO title="All posts" />
-        <Bio />
+        <SEO title="My Notes" />
+        <h1>My Notes</h1>
+        <div>These are notes that I've made in the process of studying various subjects, most of the time through
+            research papers or online courses. 
+            Usually, I will read the subject matter (e.g. research papers) at least once, and try to summarise and
+            collate key points and argument made in these notes. I will also frequently refer to videos or 
+            secondary materials for more context. 
+            The notes in this section, hence, acts like a collation of different insights from various
+            source on the subject matter. 
+        </div>
+        <br></br>
+        <hr></hr>
+        <h3>1. MIT 6.824: Distributed Systems <a href="https://pdos.csail.mit.edu/6.824/schedule.html">[2020 Course Schedule]</a></h3>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
@@ -52,7 +63,7 @@ export const pageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: {fileAbsolutePath: {regex: "/blog/"}}) {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }, filter: {fileAbsolutePath: {regex: "/notes/"}}) {
       edges {
         node {
           excerpt
