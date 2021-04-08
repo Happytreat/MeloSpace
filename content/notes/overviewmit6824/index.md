@@ -41,6 +41,13 @@ horizontal scaliability: how can we improve throughput by N times, given we have
 
     - Intuition: Usually we have multiple replicas of the same data, how can we talk about consistency between these replicas?
 
+
+### Labs 
+The labs will be written in Go. Previous iterations used C++. Golang avoids the various problems that come with C++ such as handling memory, keeping manual track of when the last thread has completed before freeing the memory etc. 
+
+(Still considering whether to work on the labs - might try a few first)
+
+
 --- 
 
 ### Useful links for the course
