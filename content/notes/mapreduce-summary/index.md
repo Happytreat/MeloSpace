@@ -5,6 +5,10 @@ description: "MapReduce is an interface that enables automatic parallelization a
 tags: ["mapreduce", "distsys", "computation"]
 ---
 
+```toc
+# This code block gets replaced with the TOC
+```
+
 ## What is MapReduce? 
 
 MapReduce is an interface that enables automatic parallelization and distribution of <strong>large-scale computation</strong>, while <strong>abstracting over "the messy details of parallelization, fault-tolerance, data distribution and load balancing"</strong> [1].
@@ -117,10 +121,8 @@ In other words, in order for reduce operations to begin, the entire partition mu
 The only way to be sure we have the entire partition is to wait for all map operations to be completed so that all input slices have been processed.
 
 
----
 
-
-#### References
+## References
 [1] Jeffrey Dean and Sanjay Ghemawat (2004). MapReduce: Simplified Data Processing on Large Clusters. https://pdos.csail.mit.edu/6.824/papers/mapreduce.pdf 
 
 [2] Stack Overflow Post https://stackoverflow.com/questions/18585839/what-are-the-disadvantages-of-mapreduce
