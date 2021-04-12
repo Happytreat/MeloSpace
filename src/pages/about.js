@@ -23,12 +23,12 @@ class BlogAbout extends React.Component {
           About Me
         </h2>
         <p style={{alignContent: 'center'}}>
-          Highly independent and motivated. Passionate about turning novel ideas into reality. 
-          A Third year Math and CS undergrad at National University of Singapore.
+          Highly independent and motivated. Passionate about distributed systems and web development. Fitness and positivity enthusiast. 
+          A final year Computer Science undergraduate at National University of Singapore.
         </p>
         <h4>Languages/Tech Stack</h4>
         <p>
-        Swift, Javascript, Python, Java, C++
+        Swift, Javascript, Python, Java, C++, Golang
         </p>
         <img alt="NodeJS" src={NodeImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
         <img alt="Languages" src={SwiftImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
@@ -62,7 +62,7 @@ class BlogAbout extends React.Component {
 
         <h4>My Resume</h4>
 
-        <iframe title="Resume" src="https://drive.google.com/file/d/123ZHBZ9dZn1RQm5Iym8gZjLE4fKLNAX7/preview" width="1000" height="1400"></iframe>
+        <iframe title="Resume" src="https://drive.google.com/file/d/16-kUft0MXeHlM5rdXAWbUzAfQZMBxT2_/preview" width="1000" height="1400"></iframe>
       </Layout>
     )
   }
