@@ -39,7 +39,7 @@ class BlogIndex extends React.Component {
         </p>
         <br></br>
         <hr></hr>
-        <h3>1. MIT 6.824: Distributed Systems <a href="https://pdos.csail.mit.edu/6.824/schedule.html">[2020 Course Schedule]</a></h3>
+        {/* <h3>1. MIT 6.824: Distributed Systems <a href="https://pdos.csail.mit.edu/6.824/schedule.html">[2020 Course Schedule]</a></h3> */}
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
