@@ -1,5 +1,5 @@
 ---
-title: "Paper Summary - Zero Downtime Release: Disruption-free Load Balancing of a Multi-Billion User Website" 
+title: "Paper Summary - Zero Downtime Release: Disruption-free Load Balancing of a Multi-Billion User Website (2020)" 
 date: "2021-05-28T22:12:03.284Z"
 description: "Zero Downtime Release is a collection of mecha- nisms used at Facebook to shield the end-users from any disruptions, preserve the cluster capacity and robustness of the infrastructure when updates are released globally..."
 ---
@@ -10,7 +10,7 @@ description: "Zero Downtime Release is a collection of mecha- nisms used at Face
 
 Facebook needed a framework to reduced disruptions and downtime during code release that required servers to restart (disruption-free release system).
 
-This need arises from: 
+This need arises from the fact that: 
 
 1. Servers are restarted frequently. 
    - Adoption of "Continuous Release" philosophy 
