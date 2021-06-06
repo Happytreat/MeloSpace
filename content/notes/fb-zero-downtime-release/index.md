@@ -1,7 +1,7 @@
 ---
 title: "Paper Summary - Zero Downtime Release: Disruption-free Load Balancing of a Multi-Billion User Website (2020)" 
 date: "2021-05-28T22:12:03.284Z"
-description: "Zero Downtime Release is a collection of mecha- nisms used at Facebook to shield the end-users from any disruptions, preserve the cluster capacity and robustness of the infrastructure when updates are released globally..."
+description: "Zero Downtime Release is a collection of mechanisms used at Facebook to shield the end-users from any disruptions, preserve the cluster capacity and robustness of the infrastructure when updates are released globally..."
 ---
 
 ```toc
