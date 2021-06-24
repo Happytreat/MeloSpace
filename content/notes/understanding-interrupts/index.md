@@ -35,6 +35,8 @@ Many device drivers execute code in two contexts:
 
 ### Abstraction of device as file 
 Unix presents console device as a file -- using file descriptor 0, 1, 2 for console. 
+- file descriptor is a common interface for input and output to streams of data.
+
 
 ## Concurrency 
 Interrupts expose several forms of concurrency:
