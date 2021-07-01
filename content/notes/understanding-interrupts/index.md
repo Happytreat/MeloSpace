@@ -1,7 +1,7 @@
 ---
-title: "Understanding Interrupts in xv6"
+title: "Understanding Device Interrupts in xv6"
 date: "2021-06-18T22:12:03.284Z"
-description: "Interrupts tells the kernel that HW wants attention now. Interrupts are a type of traps with new issues/complications..."
+description: "Device interrupts tells the kernel that HW wants attention now. Interrupts are a type of traps with new issues/complications..."
 tags: ["os", "fundamental"]
 ---
 
@@ -10,9 +10,9 @@ tags: ["os", "fundamental"]
 ```
 
 ## Key concepts
-Interrupts tells the kernel that HW wants attention now. 
+Device interrupts tells the kernel that HW wants attention now. 
 
-Interrupts are a type of traps with new issues/complications:
+Device interrupts are a type of traps with new issues/complications:
 
 1. Asynchronous: interrupt running process, and the interrupt handler may be completely unrelated to the current running process (unlike e.g. write syscall where the process causing the trap is operating in similar context of the syscall handler)
 2. Concurrency: device and processes run in parallel 
@@ -21,9 +21,14 @@ Interrupts are a type of traps with new issues/complications:
 ## Device drivers: top and bottom contexts
 Many device drivers execute code in two contexts: 
 
-- Bottom half executes at interrupt time: Interrupt handler. When the CPU has interrupts enabled, the interrupt will fire and the handler will be called, and call the relevant driver in kernel. 
+- Top-half: Minimal processing in avoid to prevent disrupt for the running process
+- Bottom-half: Rest of interrupt processing
 
-- Top half runs in a process's kernel thread and is called via system calls such as `read` and `write`: Read/write interface where higher level code will calls into 
+Specifically:
+
+- Bottom-half executes at interrupt time: Interrupt handler. When the CPU has interrupts enabled, the interrupt will fire and the handler will be called, and call the relevant driver in kernel. 
+
+- Top-half runs in a process's kernel thread and is called via system calls such as `read` and `write`: Read/write interface where higher level code will calls into 
 
 ![UARTC Device High level Overview](./interrupt-device.png)
 
