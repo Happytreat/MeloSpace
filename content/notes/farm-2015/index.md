@@ -38,7 +38,7 @@ To reduce CPU bottlenecks, FaRM's protocol follow 3 principles:
 **FaRM:**
 - Still a research prototype, to explore potential of RDMA 
 - All replicas are in the same data center 
-- (One-sided) RDMA restructs design options: Uses OCC 
+- (One-sided) RDMA restricts design options: Uses OCC 
 - Performance: 58us for simple transactions (100x faster than Spanner r/w transactions) 
 
 They target different bottlenecks: (to be elaborated more in Section [#](#how-does-farm-get-high-performance))
@@ -151,7 +151,6 @@ FaRM is very impressive; does it fall short of perfection?
   * works best if few conflicts, due to OCC.
   * data must fit in total RAM.
   * replication only within a datacenter (no geographic distribution).
-  * the data model is low-level; would need e.g. SQL library.
   * details driven by specific NIC features; what if NIC had test-and-set?
   * requires somewhat unusual RDMA and NVRAM hardware.
 
