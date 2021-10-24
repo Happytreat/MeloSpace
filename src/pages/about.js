@@ -4,12 +4,12 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 // import { rhythm } from "../utils/typography"
-import JSImg from '../../content/assets/js.png';
-import NodeImg from '../../content/assets/nodejs.png';
-import ExpressImg from '../../content/assets/expressjs.png';
-import SwiftImg from '../../content/assets/swift.png';
-import ReactImg from '../../content/assets/react.png';
-import AWSImg from '../../content/assets/lambda.png';
+// import JSImg from '../../content/assets/js.png';
+// import NodeImg from '../../content/assets/nodejs.png';
+// import ExpressImg from '../../content/assets/expressjs.png';
+// import SwiftImg from '../../content/assets/swift.png';
+// import ReactImg from '../../content/assets/react.png';
+// import AWSImg from '../../content/assets/lambda.png';
 
 class BlogAbout extends React.Component {
   render() {
@@ -23,27 +23,13 @@ class BlogAbout extends React.Component {
           About Me
         </h2>
         <p style={{alignContent: 'center'}}>
-          Highly independent and motivated. Passionate about distributed systems and web development. Fitness and positivity enthusiast. 
-          A final year Computer Science undergraduate at National University of Singapore.
+          Hi, I'm working as a software engineer in the Bay Area, CA. My area of interest are in distributed systems and C++. In my free time, 
+          I enjoy working out and writing. 
         </p>
         <h4>Languages/Tech Stack</h4>
         <p>
-        Swift, Javascript, Python, Java, C++, Golang
+        C++, Python, Javascript, Golang
         </p>
-        <img alt="NodeJS" src={NodeImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
-        <img alt="Languages" src={SwiftImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
-        <img alt="Languages" src={ReactImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
-        <img alt="Languages" src={AWSImg} style={{ maxWidth: '20vh', padding: '1rem 2rem' }}/>
-        <p>
-          Web Development: NodeJS, ExpressJS, SQL, ReQL, ReactJS, Gatsby, Serverless Framework using AWS Lambda, Cognito, IAM, DynamoDB
-        </p>
-        <p>
-          Mobile Development: Swift (iOS)
-        </p>
-        <p>
-          Blockchain Tech: Truffle, Drizzle, Ganache, Solidity
-        </p>
-
 
         <h4>Awards and Competition</h4>
         <ul>
@@ -55,13 +41,13 @@ class BlogAbout extends React.Component {
         </ul>
 
         <h4>My Publications</h4>
+        <li><a href="https://www.comp.nus.edu.sg/~ayush/images/apnet2021-nash.pdf">APNET 2021: Conjecture: Existence of Nash Equilibria in Modern Internet Congestion Control</a></li>
         <li><a href="http://ircset.org/anand/2015papers/IRC-SET-2015_submission_46.pdf">Generalisation of bishop polynomial derived from
           conventional rook polynomial</a></li>
-        <li><a href="https://www.researchgate.net/scientific-contributions/2050116807_Sim_Ming_Hui_Melodies">Solution Structures and Model Membrane Interactions of Ctriporin, an Anti-Methicillin-Resistant Staphylococcus aureus Peptide from Scorpion Venom</a></li>
+        {/* <li><a href="https://www.researchgate.net/scientific-contributions/2050116807_Sim_Ming_Hui_Melodies">Solution Structures and Model Membrane Interactions of Ctriporin, an Anti-Methicillin-Resistant Staphylococcus aureus Peptide from Scorpion Venom</a></li> */}
 
 
         <h4>My Resume</h4>
-
         <iframe title="Resume" src="https://drive.google.com/file/d/16-kUft0MXeHlM5rdXAWbUzAfQZMBxT2_/preview" width="1000" height="1400"></iframe>
       </Layout>
     )
