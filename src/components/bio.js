@@ -54,7 +54,7 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author}</strong> who lives and studies in Singapore
+        Written by <strong>{author}</strong> who lives and works in the Bay Area, California
         turning novel ideas into reality.
         {` `}
         <a href={`https://github.com/${social.twitter}`} target="_blank" rel="noopener noreferrer">
